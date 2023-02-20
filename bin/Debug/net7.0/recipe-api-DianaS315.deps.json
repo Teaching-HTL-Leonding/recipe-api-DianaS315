@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "recipe-api-DianaS315/1.0.0": {
+        "runtime": {
+          "recipe-api-DianaS315.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "recipe-api-DianaS315/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

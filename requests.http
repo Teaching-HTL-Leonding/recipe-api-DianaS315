@@ -1,0 +1,72 @@
+GET http://localhost:5157/
+
+###
+
+GET http://localhost:5157/recipes
+
+###
+
+POST http://localhost:5157/recipes
+Content-Type: application/json
+
+{
+    "Title": "Palatschinken",
+    "Ingredients": ["Milch", "Eier", "Mehl", "Salz"],
+    "Description": "Dicker als Crepes, Dünner als Pancakes und KEINE Pfannkuchen",
+    "ImageLink": "https://files.cleverleben.at/clever_downloads/recipes/Recipe_585.jpg"
+}
+
+###
+
+POST http://localhost:5157/recipes
+Content-Type: application/json
+
+{
+    "Title": "Zimtschnecken",
+    "Description": "Schwedische Spezialität, mit Zimt gefüllt und entweder Hagelzucker, oder Zuckerguss überzogen"
+}
+
+###
+
+
+POST http://localhost:5157/recipes
+Content-Type: application/json
+
+{
+    "Title": "Brownies",
+    "Ingredients": ["Butter", "Zucker", "Vanille", "Kakaopulver", "Dunkle Schokolade", "Mehl", "Eier"],
+    "Description": "Süße, saftige Brownies, am besten mit Zuckerguss übergossen",
+    "ImageLink": "https://www.einfachbacken.de/sites/einfachbacken.de/files/styles/full_width_tablet_4_3/public/2018-07/brownies-1_zuschnitt_bearb-png-converted.jpg?h=7cece4cc&itok=pTw_-eP7"
+}
+
+###
+
+PATCH  http://localhost:5157/recipes/1
+Content-Type: application/json
+
+{
+    "Title": "Palatschinken",
+    "Ingredients": ["Milch", "Eier", "Mehl", "Salz"],
+    "Description": "Dicker als Crepes, Dünner als Pancakes und KEINE Pfannkuchen, am besten mit Apfelmus und Zimt serviert",
+    "ImageLink": "https://files.cleverleben.at/clever_downloads/recipes/Recipe_585.jpg"
+}
+
+###
+
+
+PATCH  http://localhost:5157/recipes/66
+Content-Type: application/json
+
+{
+    "Title": "Palatschinken",
+    "Ingredients": ["Milch", "Eier", "Mehl", "Salz"],
+    "Description": "Dicker als Crepes, Dünner als Pancakes und KEINE Pfannkuchen, am besten mit Apfelmus und Zimt serviert",
+    "ImageLink": "https://files.cleverleben.at/clever_downloads/recipes/Recipe_585.jpg"
+}
+
+###
+GET http://localhost:5157/recipes/filter/Zimt
+
+###
+
+GET http://localhost:5157/recipes/ingredients/Eier
